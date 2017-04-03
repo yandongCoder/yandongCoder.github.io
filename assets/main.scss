@@ -38,6 +38,13 @@ $on-laptop:        800px;
 // Import partials from the `minima` theme.
 @import "minima";
 
-body{
-  background: yellow;
+//base
+p{
+  text-indent: 2em;
+}
+.grey{
+  color: $grey-color;
+}
+.font15{
+  font-size: 15px;
 }
