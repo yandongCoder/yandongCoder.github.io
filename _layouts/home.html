@@ -5,7 +5,7 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">项目</h1>
-  <div class="grey font14 page-heading-english">Projects</div>
+  <h1 class="grey font14 page-heading-english">Projects</h1>
 
   {{ content }}
 
@@ -22,8 +22,7 @@ layout: default
           <div class="grey font14">{{post.englishTitle}} — {{post.englishDescription}}</div>
       </li>
     {% endfor %}
+      <li class="light-grey"><i>The rest are not listed...</i></li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>
