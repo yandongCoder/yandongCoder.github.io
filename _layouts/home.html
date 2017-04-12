@@ -4,15 +4,22 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">项目（Projects）</h1>
+  <h1 class="page-heading">项目</h1>
+  <div class="grey font14 page-heading-english">Projects</div>
 
   {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> — {{post.description}}
-          <div class="grey font15">{{post.english}}</div>
+          <a class="post-link"
+             {% if post.aburl %}
+                href="{{ post.aburl}}"
+             {% else %}
+                href="{{ post.url | relative_url }}"
+             {% endif %}
+          >{{ post.title | escape }}</a> — {{post.description}}
+          <div class="grey font14">{{post.englishTitle}} — {{post.englishDescription}}</div>
       </li>
     {% endfor %}
   </ul>

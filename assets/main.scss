@@ -5,7 +5,7 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   15px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -45,6 +45,25 @@ p{
 .grey{
   color: $grey-color;
 }
-.font15{
-  font-size: 15px;
+.font14{
+  font-size: 14px;
+}
+.sub-tittle{
+  font-size: 19px;
+  position: relative;
+  top: 16px;
+}
+.page-link{
+  position: relative;
+  .page-subtitle{
+    position: absolute;
+    font-size: 12px;
+    top: 15px;
+    left: 0;
+    white-space: nowrap;
+  }
+}
+p.translation{
+  color: $grey-color;
+  margin-top: -15px;
 }
